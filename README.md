@@ -47,10 +47,18 @@
         - Check Predictions vs. Residuals, to check for any patterns or homoscedasticity
 
 ## Conclusions
-+ Ridge has higher accuracy on Test data which is 86%.
-+ Lasso has lower accuracy on Test as compared to Ridge, which is 84%.
-+ But, Lasso regression has found and set 50 features as redundant i.e. set their coefficients as 0, while Ridge only set for single feature.
++ Ridge has higher accuracy on Test data which is 87.76%.
++ Lasso has lower accuracy on Test as compared to Ridge, which is 86.26%.
++ But, Lasso regression has found and set 38 features as redundant i.e. set their coefficients as 0, while Ridge only set for single feature.
 + Since, the purpose of this case study is to understand the influential factors, it is best to use Lasso Regression as compared to Ridge regression.
+
+> Some of the most influential factors:
++ **PoolQC_Gd** impact price negatively, i.e. if Pool quality is good then prices are lower, may be people expect quality to be excellent
++ **PoolQC_NA** also impact price negatively, i.e. prices are lower inabsence of Pool
++ **GarageYrBlt_1920** when garage is older then the prices are lower as well
++ **Condition2_RRAn** leads to lower house prices, since the properties are adjacent to Railroads
++ **Exterior1st** with **"Asbestos Shingles"** covering house has positive impact on house prices
++ **Fence_GdPrv** when Fence is good quality with better privacy - then the prices are higher
 
 ## Technologies Used
 - Python - version 3.8.3
